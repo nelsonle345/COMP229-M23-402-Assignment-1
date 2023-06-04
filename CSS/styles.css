@@ -1,0 +1,147 @@
+.navigation-item {
+    text-decoration: none;
+    text-align: center;
+    color: #0f1011;
+    font-size: 1.25rem;
+    padding: 0.9rem;
+    float: right;
+}
+
+.navigation-item:hover {
+    background-color: #556B2F;
+    color: #002333;
+    transition: 500ms;
+}
+
+.navigation-item.active {
+    background-color: #6699CC;
+    color: #002333;
+    transition: 500ms;
+}
+.navigation-bar {
+    background-color: rgba(238, 195, 76, 0.4);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color:  #F5F5DC;
+  }
+  
+  header {
+    background-color: #3E3226;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  
+  main {
+    padding: 20px;
+  }
+  
+  .mission-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+ h1{
+    margin-top: 50px;
+ }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 20px;
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 24px;
+  }
+ 
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* Contacts */
+
+
+
+/* Set box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+
+main {
+  padding: 20px;
+}
+
+.contact-panel {
+  margin-top: 20px;
+}
+
+.contact-panel p {
+  margin-bottom: 10px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #666;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Contact */
+
+img.me {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+   
+  }
