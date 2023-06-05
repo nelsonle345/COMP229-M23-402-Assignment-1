@@ -6,13 +6,10 @@ body {
     
   }
   
- 
-  
   
   main {
     padding: 20px;
   }
-  
 
   .mission-container {
     background-color: #f9f9f9;
@@ -21,18 +18,12 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     
   }
-
-
   
   ul {
     list-style-type: disc;
     margin-left: 20px;
     padding-left: 20px;
   }
-  
- 
- 
-
 
 /* Contacts */
 
@@ -87,19 +78,31 @@ button[type="submit"]:hover {
   background-color: #666;
 }
 
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-}
 
-/* Contact */
+
+
+/* Images */
 
 img.me {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-   
-  }
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+ 
+}
+
+img.smallimage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+ 
+}
+
+img.services{
+  width: 300px;
+  margin-bottom: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
