@@ -1,11 +1,8 @@
 /* General */
 body {
     font-family: Arial, sans-serif;
-    background-color:  #F5F5DC;
-  
-    
+    background-color:  #F5F5DC; 
   }
-  
   
   main {
     padding: 20px;
@@ -26,8 +23,6 @@ body {
   }
 
 /* Contacts */
-
-
 
 /* Set box-sizing to border-box */
 * {
@@ -79,8 +74,6 @@ button[type="submit"]:hover {
 }
 
 
-
-
 /* Images */
 
 img.me {
@@ -105,4 +98,9 @@ img.services{
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+img.logo{
+  width: 75px;
+  border-radius: 50%;
 }
