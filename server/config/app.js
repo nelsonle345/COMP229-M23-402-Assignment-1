@@ -4,8 +4,21 @@ let path = require('path');
 let cookieParser = require('cookie-parser');
 let logger = require('morgan');
 
+//database setup
+//let mongoose = require('mongoose');
+//let DB = require('./db'); 
+
 let indexRouter = require('../routes/index');
 let usersRouter = require('../routes/users');
+
+//Point mongoose to the DB URI
+//mongoose.connect(DB.URI);
+
+//let mongoDB = mongoose.connection;
+//mongoDB.on('error', console.error.binf(console, 'Connection Error:'));
+//mongoDB.once('open' ()=>{
+  //console.log('Connected to MongoDB..')
+//})
 
 let app = express();
 
@@ -17,8 +30,8 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, '../public')));
-app.use(express.static(path.join(__dirname, '../node_modules')));
+app.use(express.static(path.join(__dirname, '../../public')));
+app.use(express.static(path.join(__dirname, '../../node_modules')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
@@ -40,3 +53,10 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+app.get('/service', (req, res) => {
+  const title = 'Service Page';
+  // Define other necessary variables here
+
+  res.render('service', { title });
+});
