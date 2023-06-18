@@ -5,20 +5,20 @@ let cookieParser = require('cookie-parser');
 let logger = require('morgan');
 
 //database setup
-//let mongoose = require('mongoose');
-//let DB = require('./db'); 
+let mongoose = require('mongoose');
+let DB = require('./db'); 
 
 let indexRouter = require('../routes/index');
 let usersRouter = require('../routes/users');
 
 //Point mongoose to the DB URI
-//mongoose.connect(DB.URI);
+mongoose.connect(DB.URI);
 
-//let mongoDB = mongoose.connection;
-//mongoDB.on('error', console.error.binf(console, 'Connection Error:'));
-//mongoDB.once('open' ()=>{
-  //console.log('Connected to MongoDB..')
-//})
+let mongoDB = mongoose.connection;
+mongoDB.on('error', console.error.bind(console, 'Connection Error:'));
+mongoDB.once('open', () => {
+  console.log('Connected to MongoDB..');
+});
 
 let app = express();
 
