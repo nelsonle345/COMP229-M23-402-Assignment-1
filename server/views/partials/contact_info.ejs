@@ -1,0 +1,27 @@
+<!-- Business Contact Content-->
+<body>
+    <main class ="container">
+        <div class ="row">
+            <h1><%= title %></h1>
+            <br>
+            <table class = "table table-bordered table-striped table-hover">
+                <!-- Header Row-->
+                <tr>
+                    <th class ="text-center"> Contact Name</th>
+                    <th class ="text-center"> Contact Number</th>
+                    <th class ="text-center"> Email Address</th>
+                </tr>
+
+                <!-- Repeatable Template-->
+                <% for (let count = 0; count < contactList.length; count++) { %>
+                    <tr>
+                        <td class="text-center"><%= contactList[count].contact_name %></td>
+                        <td class="text-center"><%= contactList[count].contact_number %></td>
+                        <td class="text-center"><%= contactList[count].email_address %></td>
+                    </tr>
+                <% } %>
+            </table>
+        </div>
+
+    </main>
+</body>

@@ -11,6 +11,8 @@ router.get('/', async (req, res, next) =>{
     try {
         let contactList = await contacts.find()
         console.log(contactList)
+
+        res.render('contact_data', {title: 'Business Contacts List', contactList: contactList})
     } catch (err){
         console.error(err);
     }
