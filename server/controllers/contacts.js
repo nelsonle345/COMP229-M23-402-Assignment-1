@@ -4,7 +4,10 @@ let Contact = require('../../models/contacts');
 module.exports.displayContactList = async (req, res, next) => {
     try {
         let contactList = await Contact.find();
-        res.render('contact/list', { title: 'Business Contacts List', contactList: contactList });
+        res.render('contact/list', { 
+            title: 'Business Contacts List', 
+            contactList: contactList, 
+            displayName: req.user ? req.user.displayName : '' });
         
     } catch (err) {
         console.error(err);
@@ -14,7 +17,9 @@ module.exports.displayContactList = async (req, res, next) => {
 
 module.exports.displayAddPage = async (req, res, next) => {
     try {
-        res.render('contact/add', { title: 'Add Business Contact' });
+        res.render('contact/add', { 
+        title: 'Add Business Contact',
+        displayName: req.user ? req.user.displayName : ''});
     } catch (err) {
         console.error(err);
     }
@@ -43,7 +48,9 @@ module.exports.displayEditPage = async (req, res, next) => {
 
     try {
         let contactToEdit = await Contact.findById(id);
-        res.render('contact/edit', { title: 'Edit Contact', contact: contactToEdit });
+        res.render('contact/edit', { title: 'Edit Contact',
+        contact: contactToEdit,
+        displayName: req.user ? req.user.displayName : '' });
     } catch (err) {
         console.log(err);
         res.status(500).send(err.message);
