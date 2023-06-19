@@ -1,13 +1,13 @@
 {
-  "name": "comp-229---nelson-le---301064831---assignment-1",
-  "version": "0.0.0",
+  "name": "nelsonle_express_portfolio_site",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node server"
   },
   "engines": {
     "node": "^20.1.0",
-    "npm":"^9.6.4"
+    "npm": "^9.6.4"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.0",
@@ -36,5 +36,13 @@
     "@types/passport": "^1.0.12",
     "@types/passport-local": "^1.0.35",
     "@types/passport-local-mongoose": "^6.1.1"
-  }
+  },
+  "description": "assignment 2 for COMP229 SEC 402",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "(http://github.com/nelsonle345/COMP229-M23-402-Assignment-1.git)"
+  },
+  "author": "Nelson Le",
+  "license": "ISC"
 }
