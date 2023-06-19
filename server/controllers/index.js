@@ -4,23 +4,23 @@ let mongoose = require('mongoose');
 let passport = require('passport');
 
 module.exports.displayHomePage = (req, res, next) => {
-    res.render('index', { title: 'Home' });
+    res.render('index', { title: 'Home', displayName: req.user ? req.user.displayName : '' });
   };
   
 module.exports.displayAboutPage = (req, res, next) => {
-    res.render('about', { title: 'About Me' });
+    res.render('about', { title: 'About Me', displayName: req.user ? req.user.displayName : ''  });
   };
   
 module.exports.displayContactPage = (req, res, next) => {
-    res.render('contact', { title: 'Contact Us' });
+    res.render('contact', { title: 'Contact Us', displayName: req.user ? req.user.displayName : ''  });
   };
   
 module.exports.displayServicePage = (req, res, next) => {
-    res.render('service', { title: 'Services' });
+    res.render('service', { title: 'Services', displayName: req.user ? req.user.displayName : ''  });
   };
   
 module.exports.displayProjectPage = (req, res, next) => {
-    res.render('project', { title: 'Projects' });
+    res.render('project', { title: 'Projects', displayName: req.user ? req.user.displayName : ''  });
   };
   
 
